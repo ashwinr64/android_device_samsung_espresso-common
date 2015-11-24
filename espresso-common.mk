@@ -81,10 +81,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true
 
-# Set default USB interface
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
-
 # Charger
 PRODUCT_PACKAGES += \
     charger \
@@ -125,10 +121,6 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
-
-# Feature live wallpaper
-PRODUCT_COPY_FILES += \
-    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=131072 \
