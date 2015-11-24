@@ -98,8 +98,8 @@ BOARD_CHARGER_SHOW_PERCENTAGE := true
 BOARD_USE_LEGACY_SENSORS_FUSION := false
 
 # Selinux
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/espresso-common/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+ #   device/samsung/espresso-common/sepolicy
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
